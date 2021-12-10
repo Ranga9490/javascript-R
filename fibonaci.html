@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <style>
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        input {
+            margin-left: 20px;
+        }
+
+        #fiboNumber {
+            background-color: darkgreen;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body style="font-family: monospace;font-size: xx-large;">
+    <div class="row"><label>Enter Number : </label><input type="number" value="0" onchange="fibonacci(this.value)">
+    </div>
+    <div class="row">Fibonacci Number :&nbsp;<label id="fiboNumber">0</label></div>
+    <script>
+        function fibonacci(num) {
+            const fibo = Math.round(Math.pow(1.6180339, num) / 2.2360679);
+            document.getElementById("fiboNumber").innerText = fibo;
+        }
+    </script>
+</body>
+
+</html>

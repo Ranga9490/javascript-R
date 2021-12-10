@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            //123456
+            var num1=parseInt(prompt("enter the number:"));//129
+            var digit=0;
+            min=num1%10;//9
+            while(num1!=0)
+            {
+                digit=num1%10;
+                if(min>digit)
+                min=digit;
+                num1=parseInt(num1/10);
+            
+
+             }
+                document.write("the minimum digit in the number is:"+min);
+            
+        </script>
+    </body>
+</html>

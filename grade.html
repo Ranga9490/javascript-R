@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //inputs
+       var sub1=parseInt(prompt("enter sub1"));
+       var sub2=parseInt(prompt("enter sub2"));
+       var sub3=parseInt(prompt("enter sub3"));
+       var sub4=parseInt(prompt("enter sub4"));
+       var sub5=parseInt(prompt("enter sub5"));
+       var sub6=parseInt(prompt("enter sub6"));
+       //logic
+       var  avs=(sub1+sub2+sub3+sub4+sub5+sub6)/6
+       if(avs>75){
+           document.write("grade A");
+           
+       }
+      else if(avs>55 & avs<75){
+           document.write("grade b");
+           
+       }
+       else if(avs>40 & avs<55){
+           document.write("grade c");
+           
+       }
+       else if(avs>35 & avs<40){
+           document.write("grade d");
+           
+       }
+       else {
+           document.write("fail");
+       }
+      
+   </script> 
+</body>
+</html>
