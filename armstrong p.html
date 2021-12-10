@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = prompt("Enter a 3 digit Number to check whether it's armstronhg number or not -> ");
+        var digit,sum=0,num1copy;
+       var num1copy=num1;
+        while(num1 != 0){
+            digit = Math.floor(num1 % 10);
+            sum = sum+(digit*digit*digit);
+            num1 = Math.floor(num1 /= 10);
+        }
+        if(num1copy==sum){
+            alert("Entered number is an armstrong number");
+        }else{
+            alert("Entered number is not an armstrong number");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

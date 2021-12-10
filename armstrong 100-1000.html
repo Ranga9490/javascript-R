@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(i=100; i<=1000; i++){
+    let rightDigit = Math.floor((i/1)%10);
+    let secondDigit = Math.floor((i/10)%10);
+    let thirdDigit = Math.floor((i/100)%10);
+    if(rightDigit**3 + secondDigit**3 + thirdDigit**3 === i){
+    document.write(i + ",");
+    }
+    }
+    </script>
+</body>
+</html>

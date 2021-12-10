@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function three_digit_armstrong_number() 
+{
+ for (var i = 1; i < 10; ++i) 
+ {
+   for (var j = 0; j < 10; ++j) 
+     {
+        for (var k = 0; k < 10; ++k)
+        {
+          var pow = (Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3));
+          var plus = (i * 100 + j * 10 +  k);
+          if (pow == plus) 
+           {     
+             document.write(pow);
+            }
+         }
+       }
+    }
+  }
+three_digit_armstrong_number();
+   </script>
+</body>
+</html>
