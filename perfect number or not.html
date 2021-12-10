@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var n=parseInt(prompt("enter the number"));
+       var fact=1,sum=0;
+       while(fact<n){
+           if(n%fact==0){
+               sum=sum+fact;
+           }
+          fact++;
+       }
+       if(sum==n){
+               document.write("given no is perfect number");
+           }
+           else{
+            document.write("given no is not perfect number");
+           }
+      
+    </script>
+</body>
+</html>

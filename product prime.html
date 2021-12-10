@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("enter a number"));
+         var count=0,digit=0,sum=0,f=1;
+        while(n!=0){
+         digit=n%10;
+         while(f<=digit){
+             
+             if(digit%f==0){
+                count++;
+                
+                 sum=sum+digit;
+                
+             }
+            
+             f++;
+            }
+            
+         n=parseInt(n/10);
+        }
+        if(count==2){
+            document.write(sum);
+        }
+    
+    </script>
+</body>
+</html>

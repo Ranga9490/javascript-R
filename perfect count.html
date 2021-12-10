@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            
+            count=0;
+            for(n=1;n<=1000;n++){
+                var fact=1,sum=0;
+              while(fact<n)
+                {
+                if(n%fact==0)
+                {
+                    sum=sum+fact;
+                    
+                }
+                fact++;
+             }
+                if(sum==n)
+                
+                
+                {
+                    count++;
+                }
+            }
+            document.write(count);
+            </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            var start=parseInt(prompt("enter the start:"));
+            var end=parseInt(prompt("enter the end:"));
+            var count=0,i=1;
+            while(start<=end)
+            {
+                count=0;
+                i=1;
+                while(i<=start)
+                {
+              
+                    if(start%i==0)
+                    count++;
+                    i++;
+                }
+                if(count==2)
+                document.write(start+","+" ");
+               
+                start++
+            }
+
+        </script>
+    </body>
+</html>

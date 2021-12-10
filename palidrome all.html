@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var start=parseInt(prompt("enter start value"));
+        var end=parseInt(prompt("enter end value"));
+           var maximum=0;
+           var count=0;
+        for(i=start;i<=end;i++){
+             sum=0;
+            var num=i;
+            while(num!=0){
+                  var digit=0;
+                digit=num%10;
+                sum=digit+sum*10;
+                num=parseInt(num/10);
+            }
+            if(i==sum){
+                count++;
+                document.write(sum + ", " );
+            }
+            if(sum>=maximum){
+                maximum=sum;
+            }
+            
+        }
+        document.write( "<br>" + "maximum number of palidrome:" + maximum + "<br>");
+        document.write("count of palindromes:" + count);
+
+    </script>
+</body>
+</html>
