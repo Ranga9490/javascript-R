@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            var num=parseInt(prompt("enter the number:"));
+            var fact=1;
+            if(num>0)
+            {
+                while(num!=0)//5
+                {
+                    fact=fact*num;//5*4*3*2*1
+                    num--;//0
+                }
+                document.write("the factorial is"+" "+fact);
+            }
+            else if(num==0)
+            {
+                document.write("the factorial of the"+num+" "+1);
+            }
+            else
+            {
+                document.write("the factorial of the"+num+" "+"is not avaliable");
+            }
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=prompt("n");
+        var digit=0;
+        var mul=1;
+        while(n!=0){
+        digit=n%10;
+        mul=mul*digit;
+        n=parseInt(n/10);
+        }
+        document.write(mul);
+    </script>
+</body>
+</html>

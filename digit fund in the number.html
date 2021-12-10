@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            //123456
+            var num1=parseInt(prompt("enter the number:"));
+            var digit=0,check_digit=0,count=0;
+            check_digit=parseInt(prompt("enter the digit:"));
+            while(num1!=0)
+            {
+                digit=num1%10;
+                if(digit==check_digit)
+                count++;
+               num1=parseInt(num1/10);
+            
+            }
+            if(count>=1)
+                document.write("the given digit is found in the given number");
+            else
+            document.write("the given digit is not found in the given number");
+            
+            
+        </script>
+    </body>
+</html>
