@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ 
+        // Javascript program for the above approach
+         
+        // Store the factorial of all the
+        // digits from [0, 9]
+        let factorial = [ 1, 1, 2, 6, 24, 120,
+                            720, 5040, 40320, 362880 ];
+         
+        // Function to return true
+        // if number is strong or not
+        function isStrong(N)
+        {
+             
+            // Converting N to String so that
+            // can easily access all it's digit
+            let num = N.toString();
+         
+            // sum will store summation of
+            // factorial of all digits
+            // of a number N
+            let sum = 0;
+         
+            for(let i = 0; i < num.length; i++)
+            {
+                sum += factorial[num[i] - '0'];
+            }
+         
+            // Returns true of N is strong number
+            return sum == N;
+        }
+         
+        // Function to print all
+        // strong number till N
+        function printStrongNumbers(N)
+        {
+             
+            // Iterating from 1 to N
+            for(let i = 1; i <= N; i++)
+            {
+                 
+                // Checking if a number is
+                // strong then print it
+                if (isStrong(i))
+                {
+                    document.write(i + " ");
+                }
+            }
+        }
+         
+        // Driver Code
+             
+            // Given number
+            let N = 1000;
+             
+            // Function call
+            printStrongNumbers(N);
+         
+        // This code is contributed by Mayank Tyagi
+             
+        </script>
+</body>
+</html>

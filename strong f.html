@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ranga(){
+        var n=parseInt(prompt("n"));
+         var digit=0,sum=0,fact=1;
+         var temp=n;
+         while(n!=0){
+             digit=n%10;
+             while(digit!=0){
+                 fact=fact*digit;
+                 digit--;
+             }
+             sum=sum+fact;
+             digit=0;
+             fact=1;
+             n=parseInt(n/10);
+         }
+         if(temp==sum){
+             document.write("strong no");
+         }
+         else{
+             document.write("not strong");
+         }
+        }
+        ranga()
+    </script>
+</body>
+</html>
